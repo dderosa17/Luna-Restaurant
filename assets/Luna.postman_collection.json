@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "0a1d457b-517d-4e45-93b5-c3de4101f671",
+		"name": "Luna",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new restaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/new/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						"new",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single restaurant by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{token}}XAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjI2NjQ3LCJqdGkiOiI3NWZmMjE2MzQzN2Q0YWYzODkxOThhZmE0ZWU1NzQxZCIsInVzZXJfaWQiOjE1fQ.aT7Ftqc5E1lXPadG7U2coiTTplb6l4GzIwBy96GOw10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/2/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update single restaurant by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single restaurant by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get restaurant by a specific user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/restaurants/user",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"restaurants",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/users/list/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"users",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single categoty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/users/list/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"users",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/auth/registration/ ",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"auth",
+						"registration",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Validation",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"robert@email.com\",\n    \"code\": \"26948\",\n    \"first_name\":\"Robert\",\n    \"last_name\": \"Kaiser\",\n    \"username\": \"Robert\",\n    \"password\": \"basel1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/auth/registration/validate/ ",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"auth",
+						"registration",
+						"validate",
+						" "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Obtain token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a8e312f7-b9c4-4900-ae53-6ba449137504",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setGlobalVariable(\"access\", jsonData.access);",
+							"postman.setGlobalVariable(\"refresh\", jsonData.refresh);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test5@email.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "basel1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/auth/token/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"auth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/backend/api/users/list/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"backend",
+						"api",
+						"users",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
